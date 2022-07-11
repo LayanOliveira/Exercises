@@ -1,7 +1,9 @@
 "use strict";
 //Exercise:
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.logPerson = exports.users = void 0;
 ;
-const users = [
+exports.users = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -16,5 +18,6 @@ const users = [
 function logPerson(user) {
     console.log(` - ${user.name}, ${user.age}`);
 }
+exports.logPerson = logPerson;
 console.log('Users:');
-users.forEach(logPerson);
+exports.users.forEach(logPerson);
